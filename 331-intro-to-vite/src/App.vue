@@ -28,7 +28,8 @@ import { RouterLink, RouterView } from 'vue-router'
       <div class="wrapper">
         <nav>
           <RouterLink to="/">Event</RouterLink> |
-          <RouterLink to="/about">About</RouterLink>
+          <RouterLink to="/about">About</RouterLink> |
+          <RouterLink to="/student">Student</RouterLink>
         </nav>
       </div>
     </header>
@@ -77,6 +78,12 @@ nav a {
   /* display: inline-block; */
   /* padding: 0 1rem; */
   /* border-left: 1px solid var(--color-border); */
+}
+nav a.router-link-exact-active {
+  color: var(--color-text);
+}
+nav a.router-link-exact-active:hover {
+  background-color: transparent;
 }
 /*  */
 /* nav a:first-of-type { */
