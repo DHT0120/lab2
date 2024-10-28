@@ -4,7 +4,8 @@ import EventCategoriesAndOrganizer from '@/components/EventCategoriesAndOrganize
 import type { Event } from '@/types.ts'
 //import { ref } from 'vue';
 import { ref, onMounted } from 'vue'
-import axios from 'axios'
+//import axios from 'axios'
+import EventService from '@/services/EventService'
 
 
 // const events = ref<Event[]>([
@@ -43,11 +44,11 @@ import axios from 'axios'
 //   }
 // ])
 const events = ref<Event[]>(null)
-  onMounted(() => {
-  axios
-    .get('[your mock server url]')
+onMounted(() => {
+  EventService.getEvents()
     .then((response) => {
-      console.log(response.data)
+      //console.log(response.data)
+      events.value = response.data
     })
     .catch((error) => {
       console.error('There was an error!', error)
