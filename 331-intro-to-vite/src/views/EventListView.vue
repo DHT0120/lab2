@@ -5,7 +5,7 @@ import type { Event } from '@/types.ts'
 //import { ref } from 'vue';
 import { ref, onMounted } from 'vue'
 //import axios from 'axios'
-import EventService from '@/services/EventService'
+import EventService from '@/services/EventService.ts'
 
 
 // const events = ref<Event[]>([
