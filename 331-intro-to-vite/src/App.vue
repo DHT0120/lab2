@@ -17,8 +17,7 @@ provide('perPage', 2);
         </nav>
       </div>
     </header>
-    
-    <!-- <RouterView /> -->
+
   </div>
   <div id="app">
     <router-view :perPage="perPage"></router-view>
