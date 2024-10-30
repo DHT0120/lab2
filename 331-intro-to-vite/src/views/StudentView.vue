@@ -26,7 +26,7 @@ onMounted(() => {
 
 <template>
     
-      <h1>Students Information</h1>
+      <h1 style="text-align: center;">Students Information</h1>
       <div class="events">
         <StudentCard v-for="event in events" :key="event.id" :event="event" />
       </div>

@@ -45,7 +45,7 @@ const student = ref({
   
 <script setup lang="ts">
 import { Event } from "@/types"
-import { ref } from "vue"
+//import { ref } from "vue"
 defineProps<{
   event:Event
 }>()
